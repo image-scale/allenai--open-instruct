@@ -20,3 +20,17 @@
 **Commit**: Add math utilities for extracting and normalizing LaTeX math expressions
 **Acceptance**: 12/12 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 4
+**Task**: Task 4 — Implement ground truth verifiers
+**Files created**: open_instruct/verifiers.py, tests/test_verifiers.py
+**Commit**: Add ground truth verification utilities for evaluating model outputs
+**Acceptance**: 12/12 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 5
+**Task**: Task 5 — Implement RL utilities
+**Files created**: open_instruct/rl_utils.py, tests/test_rl_utils.py
+**Commit**: Add RL utilities for timing, sequence packing, and GAE advantage calculation
+**Acceptance**: 10/10 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state

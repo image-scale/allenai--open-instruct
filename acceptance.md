@@ -46,15 +46,29 @@
 ## Task 4: Ground Truth Verifiers
 
 ### Acceptance Criteria
-- [ ] VerificationResult stores score, optional cost, and optional reasoning
-- [ ] VerifierFunction is an abstract base class with __call__ method
-- [ ] VerifierFunction has name, weight, and verifier_config attributes
-- [ ] GSM8KVerifier extracts the last number from text and compares to label
-- [ ] GSM8KVerifier handles numbers with commas (e.g., "1,000" -> "1000")
-- [ ] GSM8KVerifier handles signed numbers (e.g., "-3", "+7")
-- [ ] MathVerifier tries multiple extraction methods (boxed, Minerva, LaTeX)
-- [ ] MathVerifier returns 1.0 if any extraction matches label
-- [ ] F1Verifier calculates F1 score between prediction and label tokens
-- [ ] F1Verifier supports list of labels and returns max F1
-- [ ] remove_thinking_section() strips <think>...</think> and <answer> tags
-- [ ] PuzzleMatcherVerifier normalizes prediction and checks if label is contained
+- [x] VerificationResult stores score, optional cost, and optional reasoning
+- [x] VerifierFunction is an abstract base class with __call__ method
+- [x] VerifierFunction has name, weight, and verifier_config attributes
+- [x] GSM8KVerifier extracts the last number from text and compares to label
+- [x] GSM8KVerifier handles numbers with commas (e.g., "1,000" -> "1000")
+- [x] GSM8KVerifier handles signed numbers (e.g., "-3", "+7")
+- [x] MathVerifier tries multiple extraction methods (boxed, Minerva, LaTeX)
+- [x] MathVerifier returns 1.0 if any extraction matches label
+- [x] F1Verifier calculates F1 score between prediction and label tokens
+- [x] F1Verifier supports list of labels and returns max F1
+- [x] remove_thinking_section() strips <think>...</think> and <answer> tags
+- [x] PuzzleMatcherVerifier normalizes prediction and checks if label is contained
+
+## Task 5: RL Utilities
+
+### Acceptance Criteria
+- [x] Timer can be used as a context manager to measure execution time
+- [x] Timer can be used as a decorator to measure function execution time
+- [x] Timer logs the elapsed time with a description
+- [x] Timer has a noop mode that skips logging
+- [x] pack_sequences() concatenates queries and responses into packed sequences
+- [x] pack_sequences() pads sequences to pack_length with pad_token_id
+- [x] pack_sequences() generates correct attention_masks and position_ids
+- [x] pack_sequences() correctly handles response_masks based on mask_tool_use flag
+- [x] calculate_advantages() computes GAE advantages from values and rewards
+- [x] calculate_advantages_packed() handles packed sequences with done flags
