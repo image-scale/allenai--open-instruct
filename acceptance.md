@@ -30,15 +30,31 @@
 ## Task 3: Math Utilities
 
 ### Acceptance Criteria
-- [ ] last_boxed_only_string() extracts the last \boxed{} content from a string
-- [ ] last_boxed_only_string() handles \boxed with space syntax
-- [ ] last_boxed_only_string() returns None when no boxed content found
-- [ ] remove_boxed() removes \boxed{} wrapper from a string
-- [ ] get_unnormalized_answer() extracts answer from "Final Answer: The final answer is X" format
-- [ ] normalize_final_answer() performs substitutions and removes expressions like "dollars", "units", etc.
-- [ ] normalize_final_answer() handles LaTeX math extraction from $...$
-- [ ] fix_fracs() converts \frac12 to \frac{1}{2} format
-- [ ] fix_sqrt() converts \sqrt2 to \sqrt{2} format
-- [ ] fix_a_slash_b() converts "1/2" to \frac{1}{2}
-- [ ] strip_string() normalizes LaTeX strings for comparison (removes spaces, fixes fracs, etc.)
-- [ ] hendrycks_is_equiv() compares two strings after normalization
+- [x] last_boxed_only_string() extracts the last \boxed{} content from a string
+- [x] last_boxed_only_string() handles \boxed with space syntax
+- [x] last_boxed_only_string() returns None when no boxed content found
+- [x] remove_boxed() removes \boxed{} wrapper from a string
+- [x] get_unnormalized_answer() extracts answer from "Final Answer: The final answer is X" format
+- [x] normalize_final_answer() performs substitutions and removes expressions like "dollars", "units", etc.
+- [x] normalize_final_answer() handles LaTeX math extraction from $...$
+- [x] fix_fracs() converts \frac12 to \frac{1}{2} format
+- [x] fix_sqrt() converts \sqrt2 to \sqrt{2} format
+- [x] fix_a_slash_b() converts "1/2" to \frac{1}{2}
+- [x] strip_string() normalizes LaTeX strings for comparison (removes spaces, fixes fracs, etc.)
+- [x] hendrycks_is_equiv() compares two strings after normalization
+
+## Task 4: Ground Truth Verifiers
+
+### Acceptance Criteria
+- [ ] VerificationResult stores score, optional cost, and optional reasoning
+- [ ] VerifierFunction is an abstract base class with __call__ method
+- [ ] VerifierFunction has name, weight, and verifier_config attributes
+- [ ] GSM8KVerifier extracts the last number from text and compares to label
+- [ ] GSM8KVerifier handles numbers with commas (e.g., "1,000" -> "1000")
+- [ ] GSM8KVerifier handles signed numbers (e.g., "-3", "+7")
+- [ ] MathVerifier tries multiple extraction methods (boxed, Minerva, LaTeX)
+- [ ] MathVerifier returns 1.0 if any extraction matches label
+- [ ] F1Verifier calculates F1 score between prediction and label tokens
+- [ ] F1Verifier supports list of labels and returns max F1
+- [ ] remove_thinking_section() strips <think>...</think> and <answer> tags
+- [ ] PuzzleMatcherVerifier normalizes prediction and checks if label is contained

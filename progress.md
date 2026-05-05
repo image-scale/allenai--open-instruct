@@ -13,3 +13,10 @@
 **Commit**: Add data container classes for training pipeline
 **Acceptance**: 12/12 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 3
+**Task**: Task 3 — Implement math utilities
+**Files created**: open_instruct/math_utils.py, tests/test_math_utils.py
+**Commit**: Add math utilities for extracting and normalizing LaTeX math expressions
+**Acceptance**: 12/12 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state
