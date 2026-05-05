@@ -11,4 +11,4 @@ Start with foundational modules that other modules depend on (logging, data type
 - [x] Task 5: Implement RL utilities including a Timer for profiling operations, sequence packing for efficient batch processing, and advantage calculation using GAE (rl_utils + tests)
 - [x] Task 6: Implement core utilities including helper functions like repeat_each, metrics tracking, checkpoint management, GPU specs, and disk usage warnings (utils + tests)
 - [x] Task 7: Implement launch utilities for subprocess execution, cloud storage operations, and workspace validation (launch_utils + tests)
-- [ ] Task 8: Implement dataset transformation pipelines including tokenization configurations, transform functions for SFT/DPO/RLVR data, and label masking (dataset_transformation + tests)
+- [x] Task 8: Implement dataset transformation pipelines including tokenization configurations, transform functions for SFT/DPO/RLVR data, and label masking (dataset_transformation + tests)

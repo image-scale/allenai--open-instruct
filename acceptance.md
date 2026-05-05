@@ -100,3 +100,19 @@
 - [x] upload_to_gs_bucket() uploads files from local path to GCS
 - [x] validate_beaker_workspace() accepts valid 'org/workspace' format
 - [x] validate_beaker_workspace() raises ValueError for invalid format
+
+## Task 8: Dataset Transformation
+
+### Acceptance Criteria
+- [x] CHAT_TEMPLATES contains named chat templates (simple_concat_with_space, simple_chat, tulu, zephyr)
+- [x] TokenizerConfig stores tokenizer_name_or_path, revision, chat_template_name, add_bos, trust_remote_code
+- [x] TokenizerConfig has a tokenizer cached_property that returns configured tokenizer
+- [x] sft_tokenize_v1() tokenizes messages and returns input_ids, attention_mask, labels
+- [x] sft_tokenize_mask_out_prompt_v1() masks prompt tokens in labels with -100
+- [x] sft_filter_v1() filters by max_prompt_token_length and max_token_length
+- [x] preference_tokenize_v1() tokenizes chosen and rejected messages with prompt
+- [x] preference_filter_v1() filters preference data by max lengths
+- [x] rlvr_tokenize_v1() tokenizes RLVR data with ground_truth and verifier_source
+- [x] rlvr_max_length_filter_v1() filters RLVR data by max_prompt_token_length
+- [x] TRANSFORM_FNS registry maps function names to (function, operation_type) tuples
+- [x] SimplePreferenceCollator pads chosen/rejected sequences and creates batches
