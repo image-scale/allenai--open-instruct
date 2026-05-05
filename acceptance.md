@@ -88,3 +88,15 @@
 - [x] GPU_SPECS contains specifications for common GPUs (h100, a100, etc.)
 - [x] find_free_port() returns an available port number
 - [x] max_num_processes() returns reasonable default for multiprocessing
+
+## Task 7: Launch Utilities
+
+### Acceptance Criteria
+- [x] live_subprocess_output() runs command and prints output in real-time
+- [x] live_subprocess_output() raises exception on non-zero return code
+- [x] gs_folder_exists() returns True if GCS folder exists
+- [x] gs_folder_exists() returns False if GCS folder does not exist
+- [x] download_from_gs_bucket() downloads files from GCS to local path
+- [x] upload_to_gs_bucket() uploads files from local path to GCS
+- [x] validate_beaker_workspace() accepts valid 'org/workspace' format
+- [x] validate_beaker_workspace() raises ValueError for invalid format
