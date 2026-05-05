@@ -72,3 +72,19 @@
 - [x] pack_sequences() correctly handles response_masks based on mask_tool_use flag
 - [x] calculate_advantages() computes GAE advantages from values and rewards
 - [x] calculate_advantages_packed() handles packed sequences with done flags
+
+## Task 6: Core Utilities
+
+### Acceptance Criteria
+- [x] repeat_each() repeats each element in a sequence k times
+- [x] MetricsTracker preallocates metrics array on specified device
+- [x] MetricsTracker supports getting/setting metrics by name
+- [x] MetricsTracker.get_metrics_list() returns dict of name to float values
+- [x] warn_if_low_disk_space() warns when disk usage exceeds threshold
+- [x] warn_if_low_disk_space() skips cloud paths (gs://, s3://, etc.)
+- [x] get_last_checkpoint() returns latest completed checkpoint from folder
+- [x] get_last_checkpoint() supports incomplete flag to include partial checkpoints
+- [x] clean_last_n_checkpoints() removes old checkpoints keeping last N
+- [x] GPU_SPECS contains specifications for common GPUs (h100, a100, etc.)
+- [x] find_free_port() returns an available port number
+- [x] max_num_processes() returns reasonable default for multiprocessing

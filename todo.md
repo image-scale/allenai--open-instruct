@@ -9,6 +9,6 @@ Start with foundational modules that other modules depend on (logging, data type
 - [x] Task 3: Implement math utilities for extracting and normalizing LaTeX math expressions including boxed answer extraction, string normalization, and equivalence checking (math_utils + tests)
 - [x] Task 4: Implement ground truth verifiers for evaluating model outputs including GSM8K number extraction, math answer verification, and F1 score calculation (verifiers + tests)
 - [x] Task 5: Implement RL utilities including a Timer for profiling operations, sequence packing for efficient batch processing, and advantage calculation using GAE (rl_utils + tests)
-- [ ] Task 6: Implement core utilities including helper functions like repeat_each, metrics tracking, checkpoint management, GPU specs, and disk usage warnings (utils + tests)
+- [x] Task 6: Implement core utilities including helper functions like repeat_each, metrics tracking, checkpoint management, GPU specs, and disk usage warnings (utils + tests)
 - [ ] Task 7: Implement launch utilities for subprocess execution, cloud storage operations, and workspace validation (launch_utils + tests)
 - [ ] Task 8: Implement dataset transformation pipelines including tokenization configurations, transform functions for SFT/DPO/RLVR data, and label masking (dataset_transformation + tests)

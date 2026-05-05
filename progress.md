@@ -34,3 +34,10 @@
 **Commit**: Add RL utilities for timing, sequence packing, and GAE advantage calculation
 **Acceptance**: 10/10 criteria met
 **Verification**: tests FAIL on previous state, PASS on current state
+
+## Round 6
+**Task**: Task 6 — Implement core utilities
+**Files created**: open_instruct/utils.py, tests/test_utils.py
+**Commit**: Add core utilities for metrics tracking, checkpoint management, and system info
+**Acceptance**: 12/12 criteria met
+**Verification**: tests FAIL on previous state, PASS on current state
